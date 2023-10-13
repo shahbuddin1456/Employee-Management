@@ -1,0 +1,449 @@
+/** @format */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* start header part */
+
+.container {
+  width: 100%;
+  padding: 10px 30px;
+  background-color: #ef534f;
+}
+
+.container h5 {
+  font-size: 25px;
+  left: 0;
+  margin-right: 40px;
+  font-weight: bold;
+  font-family: "Croissant One", cursive;
+  color: #fff;
+}
+
+/* start nav section part */
+
+.upper-btn-box {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  padding: 30px;
+}
+
+.upper-btn-box .left-box {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.upper-btn-box .left-box input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  margin-left: -40px;
+  cursor: pointer;
+}
+
+.upper-btn-box .left-box button {
+  border: none;
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+  background-color: #4286f5;
+  margin-right: 60px;
+  cursor: pointer;
+  color: black;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.upper-btn-box .right-box button {
+  border: none;
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+  background-color: #4286f5;
+  margin-left: 60px;
+  cursor: pointer;
+  color: black;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.upper-btn-box .left-box button:hover {
+  color: #fff;
+}
+
+.upper-btn-box .right-box {
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+
+.upper-btn-box .right-box i {
+  font-size: 20px;
+  color: #4286f5;
+  padding: 10px;
+}
+
+.upper-btn-box .right-box input {
+  width: 60%;
+  padding: 13px;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid #4286f5;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Start table coding */
+
+.table-box {
+  width: 100%;
+  padding: 30px;
+}
+
+.table-box table {
+  width: 100%;
+}
+
+.table-box table tr th {
+  border-right: 1px solid #ccc;
+  padding: 30px 0px 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.table-box table tr td {
+  border-right: 1px solid #ccc;
+  padding: 15px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.table-box table tr td button {
+  width: 25%;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #4286f5;
+  margin: 0px 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* start modal coding */
+
+.modal {
+  width: 0%;
+  height: 500px;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  border-top: 15px groove #4286f5;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.modal.active {
+  opacity: 1;
+  z-index: 1;
+  width: 60%;
+}
+
+.modal .close-icon {
+  position: absolute;
+  right: 0;
+  margin-top: -32px;
+  margin-right: -12px;
+  font-size: 20px;
+}
+
+.modal .close-icon:hover {
+  color: #ef534f;
+}
+
+.modal .left-modal {
+  width: 30%;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+.modal .left-modal .img-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 30px;
+  position: relative;
+}
+
+.modal .left-modal .img-box input {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 50px;
+  top: 70px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.modal .left-modal .img-box i {
+  font-size: 30px;
+  padding: 10px;
+  position: absolute;
+  right: 30px;
+  top: 80px;
+  color: #4286f5;
+}
+
+.modal .left-modal .img-box img {
+  border-radius: 10px;
+}
+
+.modal .right-modal {
+  width: 70%;
+  height: 100%;
+  background-color: #f2f2f2;
+  border-left: 10px groove #4286f5;
+  padding: 20px;
+}
+
+.modal .right-modal .input-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal .right-modal .input-box label {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Young Serif", serif;
+  padding: 8px;
+  margin-top: 12px;
+}
+
+.modal .right-modal .input-box input {
+  width: 70%;
+  margin: 15px 0px;
+  padding: 8px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 3px solid #4286f5;
+  font-weight: bolder;
+}
+
+.modal .right-modal .input-box button {
+  width: 50%;
+  border: none;
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+  background-color: #4286f5;
+  margin: 20px 80px;
+  cursor: pointer;
+  color: black;
+  font-size: 15px;
+}
+
+.modal .right-modal .input-box button:disabled {
+  filter: grayscale(70%);
+}
+
+/* Responsive  code for laptop, tablet and Mobile */
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+  .table-box table tr td button {
+    width: 50%;
+    margin-top: 5px;
+  }
+  .modal .right-modal .input-box button {
+    margin: 10px 50px;
+  }
+  .modal .left-modal .img-box i {
+    font-size: 30px;
+    margin-right: 30px;
+    margin-top: 12px;
+  }
+}
+
+/* Responsive for Tablet */
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  .upper-btn-box .left-box button {
+    border: none;
+    padding: 6px;
+    outline: none;
+    border-radius: 10px;
+    background-color: #4286f5;
+    margin-right: 60px;
+    cursor: pointer;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .hide-on-tablet {
+    display: none;
+  }
+  .modal.active {
+    opacity: 1;
+    z-index: 1;
+    width: 80%;
+  }
+  .modal .left-modal .img-box i {
+    font-size: 30px;
+    margin-right: 25px;
+    margin-top: 10px;
+  }
+  .modal .right-modal .input-box button {
+    margin: 10px 50px;
+  }
+  .table-box table tr td button {
+    width: 25%;
+    margin-top: 11px;
+    margin-bottom: 5px;
+  }
+}
+
+/* Responsive for Mobile */
+
+@media only screen and (max-width: 320px) {
+  .container {
+    width: 100%;
+  }
+  .upper-btn-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: -20px;
+  }
+
+  .modal .left-modal {
+    height: 100%;
+  }
+
+  .action-button {
+    background-color: #f2f2f2;
+  }
+
+  .modal .close-icon {
+    position: absolute;
+    right: 0;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-right: 7px;
+    z-index: 999999;
+  }
+
+  .modal .close-icon:hover {
+    color: #ef534f;
+  }
+
+  .table-box table tr td button {
+    width: 50%;
+  }
+
+  .upper-btn-box .left-box {
+    width: -10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    margin-left: -10px;
+    margin-top: 10px;
+  }
+  .upper-btn-box .right-box {
+    margin-top: 60px;
+    margin-left: -30px;
+    width: 100%;
+  }
+  #del-all-btn {
+    margin-top: 20px;
+    background-color: #ccc;
+  }
+  #del-all-box {
+    margin-top: -30px;
+    margin-left: 150px;
+  }
+  .upper-btn-box .left-box button {
+    margin-right: 30px;
+    font-size: 13px;
+  }
+
+  .hide-on-Mobile {
+    display: none;
+  }
+
+  .table-box {
+    margin-top: 150px;
+    padding: 5px;
+  }
+  .modal {
+    display: flex;
+    flex-direction: column;
+    margin-top: -35px;
+    overflow-y: auto;
+    max-height: 100%;
+  }
+  .modal .left-modal .img-box img {
+    width: 40%;
+    height: 100%;
+    margin-left: 30px;
+    margin-top: -10px;
+  }
+
+  .modal .left-modal .img-box i {
+    margin-right: 10px;
+    margin-top: -45px;
+    font-size: 25px;
+  }
+  .input-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .modal .right-modal .input-box input {
+    width: 100%;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    padding: 0px;
+  }
+
+  .modal .right-modal .input-box label {
+    margin-top: 13px;
+  }
+
+  .modal .right-modal .input-box {
+    margin-top: -9px;
+  }
+
+  .modal .right-modal {
+    width: 100%;
+    height: 100%;
+    margin-top: -60px;
+    display: flex;
+    flex-direction: row;
+  }
+  .modal .left-modal {
+    width: 100%;
+    height: 100%;
+  }
+  .modal .right-modal .input-box label {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+}
